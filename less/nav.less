@@ -1,0 +1,40 @@
+//navbar in the site header
+.navbar-default {
+//the site logo in the top nav-bar
+//.logo = new class for the logo and uses the sprites mixin (less/mixin/sprites.less)
+  .logo {
+    .sprites(@bg-pos-x: -40px; @bg-pos-y: -141px; @h: 48px; @w: 38px);
+    position: absolute;
+  }
+
+  border: none;
+  border-bottom: 4px solid @primary-color;
+  padding: 1em;
+  h1 {
+    font-size: 1.2em;
+    color: @secondary-color-gray;
+  }
+  .pull-right {
+    line-height: 45px;
+  }
+
+  .navbar-collapse {
+    border: none;
+  }
+}
+
+//The left stacked menu
+//.nav-stacked = new class used for the left menu
+.nav-stacked {
+  margin-bottom: 1em;
+  li {
+    &:hover,
+    &:focus{
+      margin-left: 1em;
+    }
+  }
+  .active {
+    margin-left: 1em;
+    background-color: @nav-link-hover-bg;
+  }
+}

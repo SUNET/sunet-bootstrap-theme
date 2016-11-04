@@ -1,0 +1,76 @@
+/**
+  * The page footer
+**/
+
+//.footer = new class for the footer of the whole page
+.footer {
+  padding: 1em;
+  margin-top: 1em;
+  background: @secondary-color-light-gray;
+  border-top: 1px solid @secondary-color-gray;
+  min-height: 100px;
+
+//sprits footer-icon uses a mixin in the file less/mixin/sprites.less
+//.icon = new generall class for the icons in the footer
+  .icon {
+    position: relative;
+    margin-right: 1em;
+    display: inline-block;
+  }
+//New class for "medarbetare" icon in the sprites image
+  .icon-worker {
+    .sprites(@bg-pos-x: -675px; @bg-pos-y: -358px; @h: 51px; @w: 51px);
+  }
+
+//New class for the map icon in the sprites image
+  .icon-map {
+    .sprites(@bg-pos-x: -346px; @bg-pos-y: -358px; @h: 51px; @w: 51px);
+  }
+
+//New class for the phonenumber icon in the sprites image
+  .icon-tel {
+    .sprites(@bg-pos-x: -401px; @bg-pos-y: -358px; @h: 51px; @w: 51px);
+  }
+
+//New class for the email icon in the sprites image
+  .icon-email {
+    .sprites(@bg-pos-x: -456px; @bg-pos-y: -358px; @h: 51px; @w: 51px);
+  }
+
+  a {
+    text-decoration: none;
+
+//New class for the text on the right side of the sprites icons in the footer ("medarbetare", map, phonenumber and email)
+    .icon-right-text {
+      color: @primary-color-dark;
+      text-transform: uppercase;
+      position: relative;
+      bottom: 1.3em;
+      display: inline-block;
+    }
+
+    &:hover,
+    &:focus {
+      span {
+        color: @primary-color;
+      }
+
+      .icon-worker {
+        .sprites-bg-pos(-730px; -358px);
+      }
+
+      .icon-map
+      {
+        .sprites-bg-pos(-510px; -358px);
+      }
+
+      .icon-tel {
+        .sprites-bg-pos(-565px; -358px);
+      }
+
+      .icon-email {
+        .sprites-bg-pos(-621px; -358px);
+      }
+    }
+  }
+}

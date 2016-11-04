@@ -1,0 +1,13 @@
+/**
+  * Overvrites the default hover for the primary bottons
+  * The only button that has been change to fit the bootstrap theme are the primary button
+**/
+.btn-primary,
+.btn-default {
+  &:hover,
+  &:focus {
+    background-color: @btn-primary-hover-bg-color;
+    border-color: @btn-primary-hover-bg-color;
+    color: @primary-color-light;
+  }
+}

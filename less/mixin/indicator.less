@@ -1,0 +1,14 @@
+/**
+  * Mixin for the small color boxes used in the left menu and in headlines for information boxes
+  * Use in a class (see less/indicator.less file for example)
+  * Default settings are height: 20px and width 20px and defult color are the primary color for the site
+ **/
+
+.indicator(@h: 20px; @w: 20px; @color: @primary-color) {
+  display: inline-block;
+  height: @h;
+  width: @w;
+  background: @color;
+  vertical-align: middle;
+  margin-right: .5em;
+}

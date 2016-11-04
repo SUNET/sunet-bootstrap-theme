@@ -1,0 +1,21 @@
+.table {
+//.no-border = new class to remove the borders from the table
+  .no-border {
+    > tr {
+      > td {
+        border: none;
+      }
+    }
+  }
+}
+
+.well {  
+  .table-hover {
+    margin-bottom: 0px;
+    >tbody {
+      >tr:hover {
+        background-color: @primary-color-light;
+      }
+    }
+  }
+}

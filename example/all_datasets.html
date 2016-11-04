@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>SUNET bootstrap</title>
+<!--
+    * Styles
+    * This is a compiled file with booth bootstraps less-files and SUNET-theme less-files
+    * When making this examples I used grunt to compile the files
+-->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+<!--
+    * Header with the orange bottom border
+    * To get everyting to look the right way you have to use the same classes as in this example
+    * The header-tag can be left out
+    * This header is used for sites that a language can't be chosen.
+    * To see a header with a language option look in the index.html file
+-->
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container-fluid"><!--have to be inside the navbar-class -->
+          <div class="row">
+            <div class="col-xs-4">
+              <a href="datasets.html">
+                <span class="logo"></span><!-- site logo new class .logo styled in the less/nav.less file -->
+              </a>
+            </div>
+            <div class="col-xs-4 col-sm-3 col-md-4">
+              <div class="text-center">
+                <h1>Sunet Datasets</h1>
+              </div>
+            </div>
+            <div class="col-xs-4 col-sm-5 col-md-4">
+              <div class="pull-right">
+                <a href="#" class="btn btn-default">
+                  <span class="glyphicon glyphicon-log-in"></span>
+                  <span>Logga in</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+<!--END Header-->
+
+<!--
+    * Example on how a table for datasets could look like. Put inside a .well
+-->
+    <div class="row">
+      <div class="col-md-3">
+
+      </div>
+      <div class="col-md-6">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="datasets.html">Datasets</a></li>
+          <li class="breadcrumb-item active">All datasets</li>
+        </ol>
+        <div class="row">
+          <div class="col-xs-12">
+            <h1>All datasets</h1>
+            <div class="well well-lg">
+              <table class="table table-hover table-condensed">
+                <tbody class="no-border">
+                  <tr>
+                    <td class="col-md-8">
+                      <a href="#">Datakolumn 1</a>
+                    </td>
+                    <td class="col-md-4">
+                      <span class="pull-right">
+                        Datakolumn 2
+                      </span>                </td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-8">
+                      <a href="#">Datakolumn 1</a>
+                    </td>
+                    <td class="col-md-4">
+                      <span class="pull-right">
+                        Datakolumn 2
+                      </span>                </td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-8">
+                      <a href="#">Datakolumn 1</a>
+                    </td>
+                    <td class="col-md-4">
+                      <span class="pull-right">
+                        Datakolumn 2
+                      </span>                </td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-8">
+                      <a href="#">Datakolumn 1</a>
+                    </td>
+                    <td class="col-md-4">
+                      <span class="pull-right">
+                        Datakolumn 2
+                      </span>                </td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-8">
+                      <a href="#">Datakolumn 1</a>
+                    </td>
+                    <td class="col-md-4">
+                      <span class="pull-right">
+                        Datakolumn 2
+                      </span>                </td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-8">
+                      <a href="#">Datakolumn 1</a>
+                    </td>
+                    <td class="col-md-4">
+                      <span class="pull-right">
+                        Datakolumn 2
+                      </span>                </td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-8">
+                      <a href="#">Datakolumn 1</a>
+                    </td>
+                    <td class="col-md-4">
+                      <span class="pull-right">
+                        Datakolumn 2
+                      </span>                </td>
+                  </tr>
+                  <tr>
+                    <td class="col-md-8">
+                      <a href="#">Datakolumn 1</a>
+                    </td>
+                    <td class="col-md-4">
+                      <span class="pull-right">
+                        Datakolumn 2
+                      </span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--END table all_datasets-->
+<!--
+    * Site footer use new class footer and new classes .*-icon .icon less/footer.less
+-->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-3">
+              <a href="#"><span class="icon-worker icon"></span><span class="hidden-sm hidden-xs icon-right-text">Medarbetare</span></a>
+          </div>
+          <div class="col-xs-3">
+              <a href="#"><span class="icon-map icon"></span><span class="hidden-sm hidden-xs icon-right-text">Visa på karta</span></a>
+          </div>
+          <div class="col-xs-3">
+              <a href="#"><span class="icon-tel icon"></span><span class="hidden-sm hidden-xs icon-right-text">090 - 20 59 100</span></a>
+          </div>
+          <div class="col-xs-3">
+              <a href="#"><span class="icon-email icon"></span><span class="hidden-sm hidden-xs icon-right-text">info@sunet.se</span></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+<!--END footer-->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+/**
+  * .sprites is a mixin used to get images from a sprite imagefile. As defult the sprites-file that is used on the
+  * SUNET main-site is used. To use the mixin whit the default sprites the sprites file path maybe has to change
+  * .sprites-bg-pos is a mixin to get the background position of the sprites (can be used on outer thigs as well)
+  * To see in use look att the less/footer.less file or less/nav.less file
+  **/
+
+//sprites mixin
+.sprites(@url: "../img/sprites.png"; @bg-size-x: 900px; @bg-size-y: 1200px; @bg-pos-x; @bg-pos-y; @h; @w){
+  background: url(@url); //path to the sprits image
+  background-size: @bg-size-x @bg-size-y; //the size of the sprites-image
+  .sprites-bg-pos(@bg-pos-x; @bg-pos-y); //the posiotion of the image inside the sprites
+  height: @h; //the height of the image inside the sprites
+  width: @w; //the width of the image inside the sprites
+}
+
+.sprites-bg-pos(@bg-pos-x; @bg-pos-y) {
+  background-position: @bg-pos-x @bg-pos-y;
+}
